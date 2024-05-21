@@ -11,6 +11,11 @@ import EditarCustomer from '../components/Customer/EditarCustomer.vue';
 import NewCustomer from '../components/Customer/NewCustomer.vue';
 import Customer from '../views/Customers.vue';
 
+import EditarProducto from '../components/Producto/EditarProducto.vue';
+import NewProducto from '../components/Producto/NewProducto.vue';
+import Producto from '../views/Productos.vue';
+
+
 import HomeView from '../views/HomeView.vue';
 import Categoria from '../views/Categorias.vue';
 
@@ -73,6 +78,22 @@ const routes = [
     path: '/customers/nueva',
     name: 'NewCustomer',
     component: NewCustomer
+  },
+
+  {
+    path: '/productos',
+    name: 'productos',
+    component: Producto
+  },
+  {
+    path: '/productos/editar/:id',
+    name: 'EditarProducto',
+    component: EditarProducto
+  },
+  {
+    path: '/productos/nuevo',
+    name: 'NewProducto',
+    component: NewProducto
   },
 
   {
